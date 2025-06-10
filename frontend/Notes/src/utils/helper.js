@@ -7,7 +7,7 @@ export const validemail = (email) => {
 export const Initials = (name) => {
   if (!name || typeof name !== "string") return "";
 
-  const words = name.trim().split(/\s+/); // handles extra spaces
+  const words = name.trim().split(/\s+/); 
   let initials = "";
 
   for (let i = 0; i < Math.min(words.length, 2); i++) {
