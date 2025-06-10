@@ -20,12 +20,12 @@ const Splash = () => {
       {/* Watermark images with glowing effect */}
       <div className="absolute inset-0 z-0 pointer-events-none select-none">
         <img
-          src="../src/assets/pen.png"
+          src="../src/assets/pen.svg"
           alt="Pen Watermark"
-          className="absolute right-[70%] top-[15%] w-[350px] opacity-40 transition-transform duration-1000 ease-in-out hover:scale-150 hover:rotate-[360deg] filter drop-shadow-[0_0_10px_yellow]"
+          className="absolute right-[70%] top-[30%] w-[350px] opacity-40 transition-transform duration-1000 ease-in-out hover:scale-150 hover:rotate-[360deg] filter drop-shadow-[0_0_10px_yellow]"
         />
         <img
-          src="../src/assets/notepad.png"
+          src="../src/assets/notepad.svg"
           alt="Notepad Watermark"
           className="absolute left-[70%] bottom-[10%] w-[500px] opacity-40 transition-transform duration-1000 ease-in-out hover:scale-150 hover:rotate-[360deg] filter drop-shadow-[0_0_10px_yellow]"
         />
