@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-route
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
+import PEN from "./assets/pen.svg"
+import PAD from "./assets/notepad.svg"
+
 
 const Splash = () => {
   const navigate = useNavigate();
@@ -20,12 +23,12 @@ const Splash = () => {
       {/* Watermark images with glowing effect */}
       <div className="absolute inset-0 z-0 pointer-events-none select-none">
         <img
-          src="../src/assets/pen.svg"
+          src={PEN}
           alt="Pen Watermark"
           className="absolute right-[70%] top-[30%] w-[350px] opacity-40 transition-transform duration-1000 ease-in-out hover:scale-150 hover:rotate-[360deg] filter drop-shadow-[0_0_10px_yellow]"
         />
         <img
-          src="../src/assets/notepad.svg"
+          src={PAD}
           alt="Notepad Watermark"
           className="absolute left-[70%] bottom-[10%] w-[500px] opacity-40 transition-transform duration-1000 ease-in-out hover:scale-150 hover:rotate-[360deg] filter drop-shadow-[0_0_10px_yellow]"
         />
@@ -50,7 +53,7 @@ const Splash = () => {
             Get Started
           </button>
           <p className="text-sm text-purple-300 mt-4 font-bold">
-            Join thousands of glowing minds 🌟
+            Join the Noter Nerds 🌟
           </p>
         </div>
       </div>
